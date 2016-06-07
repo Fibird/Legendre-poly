@@ -1,1 +1,1 @@
-# Legendre poly
+# Legendre polynomial
