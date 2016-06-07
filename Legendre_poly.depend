@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1465312000 source:e:\codeblocks\legendre_poly\main.c
+	<stdio.h>
+	<stdlib.h>
+

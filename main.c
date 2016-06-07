@@ -19,14 +19,21 @@ double legendre(int n, double x)
 
 int main()
 {
-    int n;
+    int n, i;
     double x, p;
+    FILE *fp = fopen("result.txt", "w+");
     printf("Please enter n: ");
     scanf("%d", &n);
     printf("Please enter x: ");
     scanf("%lf", &x);
     //computes the p through recursively
-    p = legendre(n, x);
-    printf("The result of P%d(%lf) = %lf\n", n, x, p);
+    //p = legendre(n, x);
+    //printf("The result of P%d(%lf) = %lf\n", n, x, p);
+    for (i = 0; i <= n; i++)
+    {
+        p = legendre(i, x);
+        fprintf(fp, "%d\t%lf\n", i, p);
+    }
+    fclose(fp);
     return 0;
 }
